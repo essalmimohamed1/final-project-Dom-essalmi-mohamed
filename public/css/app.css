@@ -12549,6 +12549,24 @@ textarea.form-control-lg {
   transition: 0.5s;
 }
 
+.sec4 {
+  background-image: url(../../../../public/img/stats-bg.jpg);
+  background-size: cover;
+  height: 30vh;
+  background-attachment: fixed;
+  position: relative;
+}
+.sec4::before {
+  content: "";
+  top: 0;
+  position: absolute;
+  background-color: black;
+  z-index: 1;
+  opacity: 70%;
+  width: 98.8vw;
+  height: 100%;
+}
+
 @media (max-width: 430px) {
   .divsection1 {
     flex-direction: column-reverse;
@@ -12701,6 +12719,19 @@ textarea.form-control-lg {
   }
   .divsection3 .div2section3 .divdiv2section3 p {
     width: 90vw;
+  }
+  .sec4 {
+    height: 150vh;
+  }
+  .sec4::before {
+    content: "";
+    width: 100%;
+  }
+  .sec4 .sec4-div1 {
+    width: 100vw;
+  }
+  .sec4 .sec4-div1 h3, .sec4 .sec4-div1 .h3 {
+    width: 100vw;
   }
 }
 

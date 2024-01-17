@@ -159,7 +159,23 @@
     
 }
 // * section 4
-
+.sec4{
+    background-image: url(../../../../public/img/stats-bg.jpg);
+    background-size: cover;
+    height: 30vh;
+    background-attachment: fixed;
+    position: relative;
+    &::before{
+        content: "";
+        top: 0;
+        position: absolute;
+        background-color: black;
+        z-index: 1;
+        opacity: 70%;
+        width: 98.8vw;
+        height: 100%;
+    }
+}
 
 @media (max-width: 430px){
     .divsection1{
@@ -316,6 +332,20 @@
                 p{
                     width: 90vw;
                 }
+            }
+        }
+    }
+
+    .sec4{
+        height: 150vh;
+        &::before{
+            content: "";
+            width: 100%;
+        }
+        .sec4-div1{
+            width: 100vw;
+            h3{
+                width: 100vw;
             }
         }
     }
