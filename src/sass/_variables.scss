@@ -1,0 +1,13 @@
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+
+
+$blue: #1a76d1;
+
+$custom-colors: (
+"blue": $blue,
+);
+
+$theme-colors: map-merge($custom-colors , $theme-colors);
+$custom-spacers: ("imane": .75rem);
+$spacers: map-merge($custom-spacers, $spacers);
