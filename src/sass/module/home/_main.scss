@@ -274,7 +274,6 @@
                 color: white;
                 border: none;
                 border-radius: 25px;
-
             }
             
         }
@@ -471,5 +470,54 @@
         }     
     } 
 }
+// *section 9
+.sec8-div1{
+    background-color: rgba(128, 128, 128, 0.117);
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    .sec8-img{
+        img{
+            width: 95vw;
+            height: 70vh;
+        }
+    }
+    .sec8-div1-div1{
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 95vw;
+        gap: 20px;
+        .sec-input{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            gap: 20px;
+            input{
+                height: 8vh;
+                width: 90vw;
+            }
+        }
+        .form-floating{
+            textarea{
+                width: 90vw;
+            }
+        }
+        .sec8-button{
+            button{
+                height: 8vh;
+                width: 90vw;
+                background-color: #ce2727;
+                color: white;
+                border: none;
+                border-radius: 25px;
+            }
+            
+        }
+    }
 }
 
+}
