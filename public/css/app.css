@@ -12980,6 +12980,7 @@ textarea.form-control-lg {
     display: flex;
     align-items: center;
     padding: 20px;
+    height: 20vh;
     width: 90vw;
     gap: 20px;
   }
@@ -12988,6 +12989,56 @@ textarea.form-control-lg {
     padding: 15px;
     height: 10vh;
     width: 10vh;
+  }
+  .sec11-div6 {
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    border: 2px black solid;
+    padding: 20px;
+    gap: 20px;
+  }
+  .sec11-div6 .sec11-div7 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .sec11-div6 .sec11-div9 {
+    text-align: center;
+  }
+  .sec11-div6 .sec11-div9 button {
+    height: 8vh;
+    width: 50vw;
+    background-color: #ce2727;
+    color: white;
+    border: none;
+    border-radius: 25px;
+  }
+}
+.footer-icons {
+  color: white;
+  background-color: black;
+  border: white solid 1px;
+  height: 6vh;
+  padding: 10px;
+  border-radius: 50%;
+  font-size: large;
+}
+
+.footer-border {
+  border-top: 1px solid white;
+  padding: 50px;
+  width: 50vw;
+}
+
+@media (max-width: 430px) {
+  .footer-icons {
+    height: 7vh;
+  }
+  .footer-border {
+    border-top: 1px solid white;
+    padding: 50px;
+    width: 100vw;
   }
 }
 

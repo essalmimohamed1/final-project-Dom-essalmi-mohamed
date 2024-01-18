@@ -1,0 +1,26 @@
+.footer-icons{
+    color: white;
+    background-color:  black;
+    border: white solid 1px;
+    height: 6vh;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: large;
+}
+.footer-border{
+    border-top: 1px solid white;
+    padding: 50px;
+    width: 50vw;
+
+}
+@media (max-width: 430px){
+    .footer-icons{
+        height: 7vh;
+    }
+    .footer-border{
+        border-top: 1px solid white;
+        padding: 50px;
+        width: 100vw;
+    
+    }
+}
