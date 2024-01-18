@@ -12630,6 +12630,44 @@ textarea.form-control-lg {
   height: 23%;
 }
 
+.sec8-div1 {
+  background-color: rgba(128, 128, 128, 0.117);
+  display: flex;
+}
+.sec8-div1 .sec8-img img {
+  width: 30vw;
+  height: 70vh;
+}
+.sec8-div1 .sec8-div1-div1 {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 70vw;
+}
+.sec8-div1 .sec8-div1-div1 .sec-input {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+}
+.sec8-div1 .sec8-div1-div1 .sec-input input {
+  height: 8vh;
+  width: 18vw;
+}
+.sec8-div1 .sec8-div1-div1 .form-floating textarea {
+  width: 57vw;
+}
+.sec8-div1 .sec8-div1-div1 .sec8-button button {
+  height: 8vh;
+  width: 15vw;
+  background-color: #ce2727;
+  color: white;
+  border: none;
+  border-radius: 25px;
+}
+
 @media (max-width: 430px) {
   .divsection1 {
     flex-direction: column-reverse;
