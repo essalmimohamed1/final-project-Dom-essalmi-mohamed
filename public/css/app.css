@@ -12668,6 +12668,79 @@ textarea.form-control-lg {
   border-radius: 25px;
 }
 
+.sec11-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  gap: 20px;
+}
+.sec11-div .sec11-div2 iframe {
+  width: 90vw;
+}
+
+.sec11-div3 {
+  display: flex;
+  flex-direction: column;
+  width: 98vw;
+  padding: 50px;
+  gap: 20px;
+}
+.sec11-div3 .sec11-div4 {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
+.sec11-div3 .sec11-div5 {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background-color: rgba(128, 128, 128, 0.234);
+  width: 50vw;
+  height: 15vh;
+  gap: 20px;
+}
+.sec11-div3 .sec11-div5 .sec11-icons i {
+  font-size: xx-large;
+  color: white;
+  background-color: #ce2727;
+  padding: 15px;
+  height: 10vh;
+  width: 10vh;
+  border-radius: 50%;
+}
+
+.sec11-new {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sec11-div6 {
+  display: flex;
+  flex-direction: column;
+  width: 90vw;
+  border: 2px black solid;
+  padding: 20px;
+  gap: 20px;
+}
+.sec11-div6 .sec11-div7 {
+  display: flex;
+  gap: 20px;
+}
+.sec11-div6 .sec11-div9 {
+  text-align: center;
+}
+.sec11-div6 .sec11-div9 button {
+  height: 8vh;
+  width: 15vw;
+  background-color: #ce2727;
+  color: white;
+  border: none;
+  border-radius: 25px;
+}
+
 @media (max-width: 430px) {
   .divsection1 {
     flex-direction: column-reverse;
@@ -12889,6 +12962,32 @@ textarea.form-control-lg {
     color: white;
     border: none;
     border-radius: 25px;
+  }
+  .sec11-div3 {
+    display: flex;
+    flex-direction: column;
+    width: 98vw;
+    padding: 20px;
+    gap: 20px;
+  }
+  .sec11-div3 .sec11-div4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 20px;
+  }
+  .sec11-div3 .sec11-div5 {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    width: 90vw;
+    gap: 20px;
+  }
+  .sec11-div3 .sec11-div5 .sec11-icons i {
+    font-size: x-large;
+    padding: 15px;
+    height: 10vh;
+    width: 10vh;
   }
 }
 
