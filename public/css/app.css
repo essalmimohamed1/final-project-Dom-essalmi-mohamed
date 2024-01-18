@@ -12506,10 +12506,6 @@ textarea.form-control-lg {
   color: white;
   background-color: rgba(128, 128, 128, 0.309);
 }
-.divsection3 .divdiv1section3:hover {
-  transform: scale(1.1);
-  transition: 0.5s;
-}
 .divsection3 .div2section3 {
   width: 60vw;
   display: flex;
@@ -12552,7 +12548,10 @@ textarea.form-control-lg {
 .sec4 {
   background-image: url(../../../../public/img/stats-bg.jpg);
   background-size: cover;
-  height: 30vh;
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  font-size: x-large;
   background-attachment: fixed;
   position: relative;
 }
@@ -12565,6 +12564,19 @@ textarea.form-control-lg {
   opacity: 70%;
   width: 98.8vw;
   height: 100%;
+}
+
+.section5 {
+  display: flex;
+  gap: 130px;
+}
+
+.nav-link {
+  color: #ce2727;
+}
+
+.nav-link:hover {
+  color: #ce2727;
 }
 
 @media (max-width: 430px) {

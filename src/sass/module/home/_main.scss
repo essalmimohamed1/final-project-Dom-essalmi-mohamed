@@ -113,11 +113,6 @@
             background-color: rgba(128, 128, 128, 0.309);
         }
     }
-    .divdiv1section3:hover{
-        transform: scale(1.1);
-        transition: 0.5s;
-        
-    }
     .div2section3{
         width: 60vw;
         display: flex;
@@ -162,7 +157,10 @@
 .sec4{
     background-image: url(../../../../public/img/stats-bg.jpg);
     background-size: cover;
-    height: 30vh;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    font-size: x-large;
     background-attachment: fixed;
     position: relative;
     &::before{
@@ -176,7 +174,17 @@
         height: 100%;
     }
 }
-
+// *section 5
+.section5{
+    display: flex;
+    gap: 130px;
+}
+.nav-link{
+    color: #ce2727;
+}
+.nav-link:hover{
+    color: #ce2727;
+}
 @media (max-width: 430px){
     .divsection1{
         flex-direction: column-reverse;
