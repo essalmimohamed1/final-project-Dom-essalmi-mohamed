@@ -185,6 +185,54 @@
 .nav-link:hover{
     color: #ce2727;
 }
+// *section 6
+.section6{
+    border-left: #ec2727 2px solid;
+    height: 50vh;
+    padding: 150px;
+}
+.imgsection6{
+    img{
+        border-radius: 50%;
+        border: white 2px solid;
+    }
+}
+#button1{
+    background-color: red;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+}
+// * section 7
+// *section 8
+.seventh-section{     
+    background-color: rgba(199, 199, 190, 0.202);     
+    height: fit-content;     
+    padding-bottom: 4%;     
+    .sec8-cards{         
+        width: 100% !important;         
+        padding-inline: 5%;         
+        gap: 2vw;         
+        .card{             
+            width: 28vw !important;             
+            .sec8-img-border{                 
+                position: relative;                 
+                &::before{                     
+                    position: absolute;                     
+                    content: '';                     
+                    top: 80%;                     
+                    left: 0%;                     
+                    background-color: #00000000;                     
+                    background-image: url(../../../../public/img/team-shape.svg);                     
+                    background-repeat: no-repeat;                     
+                    border-bottom: 2px solid rgba(0, 0, 0, 0.099);                     
+                    width: 100%;                     
+                    height: 23%;                 
+                }             
+            }         
+        }     
+    } 
+}
 @media (max-width: 430px){
     .divsection1{
         flex-direction: column-reverse;
@@ -357,5 +405,24 @@
             }
         }
     }
+    
+    
+    
+    .seventh-section{     
+    background-color: rgba(199, 199, 190, 0.202);     
+    height: fit-content;     
+    padding-bottom: 4%;   
+    gap: 20vh;
+    .sec8-cards{         
+        width: 100% !important;         
+        padding-inline: 5%; 
+        display: flex;        
+        gap: 30vw;         
+        .card{             
+            width: 90vw !important;             
+            
+        }     
+    } 
+}
 }
 

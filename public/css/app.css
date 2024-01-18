@@ -12351,7 +12351,11 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+.nav-hov {
+  z-index: 5;
+}
 .nav-hov a {
+  z-index: 5;
   position: relative;
 }
 .nav-hov a::after {
@@ -12579,6 +12583,53 @@ textarea.form-control-lg {
   color: #ce2727;
 }
 
+.section6 {
+  border-left: #ec2727 2px solid;
+  height: 50vh;
+  padding: 150px;
+}
+
+.imgsection6 img {
+  border-radius: 50%;
+  border: white 2px solid;
+}
+
+#button1 {
+  background-color: red;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+}
+
+.seventh-section {
+  background-color: rgba(199, 199, 190, 0.202);
+  height: fit-content;
+  padding-bottom: 4%;
+}
+.seventh-section .sec8-cards {
+  width: 100% !important;
+  padding-inline: 5%;
+  gap: 2vw;
+}
+.seventh-section .sec8-cards .card {
+  width: 28vw !important;
+}
+.seventh-section .sec8-cards .card .sec8-img-border {
+  position: relative;
+}
+.seventh-section .sec8-cards .card .sec8-img-border::before {
+  position: absolute;
+  content: "";
+  top: 80%;
+  left: 0%;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: url(../../../../public/img/team-shape.svg);
+  background-repeat: no-repeat;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.099);
+  width: 100%;
+  height: 23%;
+}
+
 @media (max-width: 430px) {
   .divsection1 {
     flex-direction: column-reverse;
@@ -12744,6 +12795,21 @@ textarea.form-control-lg {
   }
   .sec4 .sec4-div1 h3, .sec4 .sec4-div1 .h3 {
     width: 100vw;
+  }
+  .seventh-section {
+    background-color: rgba(199, 199, 190, 0.202);
+    height: fit-content;
+    padding-bottom: 4%;
+    gap: 20vh;
+  }
+  .seventh-section .sec8-cards {
+    width: 100% !important;
+    padding-inline: 5%;
+    display: flex;
+    gap: 30vw;
+  }
+  .seventh-section .sec8-cards .card {
+    width: 90vw !important;
   }
 }
 
