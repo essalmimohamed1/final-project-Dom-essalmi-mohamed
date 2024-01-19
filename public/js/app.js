@@ -1,9 +1,9 @@
 
 //& Header
 //* sideBar
-const body = document.body
-const navbarBtn = document.querySelector('.navbar-toggler')
-const navElements = document.querySelector('.navigation')
+let body = document.body
+let navbarBtn = document.querySelector('.navbar-toggler')
+let navElements = document.querySelector('.navigation')
 
 navbarBtn.addEventListener("click", ()=> {
     if(navElements.classList.contains('nav-hide')){
@@ -19,15 +19,15 @@ navbarBtn.addEventListener("click", ()=> {
 
 //* modale
 
-const connexion = document.querySelector('.connexion');
-const modale  = document.querySelector('.modale');
-const signinDiv = document.querySelector('.signin')
-const signupDiv = document.querySelector('.signup')
-const signin = document.querySelector('.signinbtn')
-const signup = document.querySelector('.signupbtn')
-const clear = document.querySelector('.clear')
-const signin2 = document.querySelector('.signinbtn2')
-const signup2 = document.querySelector('.signupbtn2')
+let connexion = document.querySelector('.connexion');
+let modale  = document.querySelector('.modale');
+let signinDiv = document.querySelector('.signin')
+let signupDiv = document.querySelector('.signup')
+let signin = document.querySelector('.signinbtn')
+let signup = document.querySelector('.signupbtn')
+let clear = document.querySelector('.clear')
+let signin2 = document.querySelector('.signinbtn2')
+let signup2 = document.querySelector('.signupbtn2')
 
 modale.addEventListener("click", (event) => {
     event.stopPropagation();
@@ -74,9 +74,9 @@ connexion.addEventListener("click", ()=> {
             signinDiv.classList.add('d-none');
         }
     })
-    
-
     clear.addEventListener("click", () =>{
         modale.classList.add('d-none');
     })
 })
+// * caroussel 2
+

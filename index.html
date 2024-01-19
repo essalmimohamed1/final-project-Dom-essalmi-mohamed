@@ -6,7 +6,10 @@
         <title>Document</title>
         <link rel="stylesheet" href="./public/css/app.css" />
     </head>
-    <body   >
+    <body>
+        <div class="back">
+            <a href="#" class="top"><span><i class="fa-solid fa-circle-up scroll"></i></i></span></a>
+        </div>
         <!-- my navbar -->
         <header>
         <!-- navbar -->
@@ -112,10 +115,10 @@
             <section>   
                 <div class="divsection1">
                     <div class="divdiv1section1">
-                        <h1>ENJOY YOUR HEALTHY DELICOUS FOOD</h1>
+                        <h1 class="titre">ENJOY YOUR HEALTHY DELICOUS FOOD</h1>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores nobis sunt tenetur a officia blanditiis?</p>
                         <div class="divdiv2section1">
-                            <button>book a Table</button>
+                            <button> <a href="#book" class="text-decoration-none text-white">book a Table</a></button>
                             <div>
                                 <!-- Button trigger modal -->
                                 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#vid">
@@ -148,8 +151,8 @@
             <!-- section 2 -->
             <section class="d-flex flex-column gap-5 pb-5">
                 <div class="d-flex flex-column align-items-center w-100">
-                    <p class="text-secondary">ABOUT US</p>
-                    <h4>LEARN MORE <span class="text-danger">ABOUT US</span></h4>
+                    <p class="text-secondary titre">ABOUT US</p>
+                    <h4 class="cover">LEARN MORE <span class="text-danger">ABOUT US</span></h4>
                 </div>
                 <div class="divsection2">
                     <div class="divdiv1section2">
@@ -180,6 +183,11 @@
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident dignissimos consectetur placeat odit, delectus sed voluptas totam. Animi quisquam nobis fuga aliquid inventore. Molestiae voluptate omnis quas nihil velit aliquid!</p>
                         </div>
                         <div class="divdiv3section2">
+                            <div>
+                                <button class="button" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#vid">
+                                    <svg viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="26px"><path d="M424.4 214.7L72.4 6.6C43.8-10.3 0 6.1 0 47.9V464c0 37.5 40.7 60.1 72.4 41.3l352-208c31.4-18.5 31.5-64.1 0-82.6z" fill="currentColor"></path></svg>
+                                </button>
+                            </div>
                             <img src="./public/img/about-2.jpg" alt="">
                         </div>
                     </div>
@@ -243,8 +251,8 @@
             <section>
                 <div class="d-flex flex-column justify-content-around align-items-center gap-5">
                     <div class="d-flex flex-column gap-2 align-items-center">
-                        <p>OUR MENU</p>
-                        <h2>CHECK OUR <span class="text-danger">YUMMY MENU</span></h2>
+                        <p class="titre">OUR MENU</p>
+                        <h2 class="cover">CHECK OUR <span class="text-danger">YUMMY MENU</span></h2>
                     </div>
                     <div class="d-flex flex-column align-items-center">
                         <nav>
@@ -430,8 +438,8 @@
             <!-- section 6 -->
             <section class="pt-5">
                 <div class="d-flex flex-column align-items-center bg-body-secondary pt-5 w-100">
-                    <p class="text-secondary">TESTMONLAS</p>
-                    <h2 class="text-center">WHAT ARE THEY <span class="text-danger">SAYING ABOUT US</span></h2>
+                    <p class="text-secondary titre">TESTMONLAS</p>
+                    <h2 class="text-center cover">WHAT ARE THEY <span class="text-danger">SAYING ABOUT US</span></h2>
                 </div>
                 <div id="carouselExampleIndicators" class="carousel slide">
                     <div class="carousel-indicators buttonsection6">
@@ -442,11 +450,11 @@
                     </div>
                     <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <div class="d-lg-flex flex-lg-row-reverse d-flex flex-column-reverse justify-content-around justify-content-lg-around al w-100 p-lg-5 p-2 bg-body-secondary ">
-                            <div class="imgsection6 p-lg-5 p-0 w-25">
-                                <img src="./public/img/testimonials/testimonials-1.jpg" class="d-block" width="250px" alt="...">
+                        <div class="d-lg-flex flex-lg-row-reverse d-flex flex-column-reverse justify-content-around align-items-center text-lg-start  justify-content-lg-around al w-100 p-lg-5 p-2 bg-body-secondary w-75 gap-5 ">
+                            <div class="imgsection6 p-lg-5 p-0 ">
+                                <img src="./public/img/testimonials/testimonials-2.jpg" class="d-block" width="250px" alt="...">
                             </div>
-                            <div class="d-flex flex-column gap-2 p-lg-5 p-0  section6 w-75">
+                            <div class="d-flex flex-column gap-2 p-lg-5 p-0  section6 w-100">
                                 <p class="text-secondary w-100"><span class="text-danger"><i class="fa-solid fa-quote-left"></i></span>   Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita perferendis, vitae voluptate animi qui velit sapiente itaque veniam eveniet a ad aliquam, minima perspiciatis magni? Molestiae ducimus maxime exercitationem repudiandae!  <span class="text-danger"> <i class="fa-solid fa-quote-left fa-rotate-180"></i></span></p>
                                 <h1>SARA Wilsson</h1>
                                 <p class="text-secondary">Designer</p>
@@ -461,14 +469,14 @@
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <div class="d-lg-flex flex-lg-row-reverse justify-content-lg-around al w-100 p-5 bg-body-secondary ">
-                            <div class="imgsection6 p-5 w-25">
-                                <img src="./public/img/testimonials/testimonials-2.jpg" class="d-block" width="250px" alt="...">
+                        <div class="d-lg-flex flex-lg-row-reverse d-flex flex-column-reverse justify-content-around align-items-center text-lg-start  justify-content-lg-around al w-100 p-lg-5 p-2 bg-body-secondary w-75 gap-5 ">
+                            <div class="imgsection6 p-lg-5 p-0 ">
+                                <img src="./public/img/testimonials/testimonials-1.jpg" class="d-block" width="250px" alt="...">
                             </div>
-                            <div class="d-flex flex-column gap-2 p-5 section6 w-75">
-                                <p class="text-secondary"><span class="text-danger"><i class="fa-solid fa-quote-left"></i></span>   Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita perferendis, vitae voluptate animi qui velit sapiente itaque veniam eveniet a ad aliquam, minima perspiciatis magni? Molestiae ducimus maxime exercitationem repudiandae!  <span class="text-danger"> <i class="fa-solid fa-quote-left fa-rotate-180"></i></span></p>
-                                <h1>SARA Wilsson</h1>
-                                <p class="text-secondary">Designer</p>
+                            <div class="d-flex flex-column gap-2 p-lg-5 p-0  section6 w-100">
+                                <p class="text-secondary w-100"><span class="text-danger"><i class="fa-solid fa-quote-left"></i></span>   Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita perferendis, vitae voluptate animi qui velit sapiente itaque veniam eveniet a ad aliquam, minima perspiciatis magni? Molestiae ducimus maxime exercitationem repudiandae!  <span class="text-danger"> <i class="fa-solid fa-quote-left fa-rotate-180"></i></span></p>
+                                <h1>Youssef Faradi</h1>
+                                <p class="text-secondary">Fst</p>
                                 <div class="text-warning">
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
@@ -480,14 +488,14 @@
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <div class="d-lg-flex flex-lg-row-reverse justify-content-lg-around al w-100 p-5 bg-body-secondary ">
-                            <div class="imgsection6 p-5 w-25">
+                        <div class="d-lg-flex flex-lg-row-reverse d-flex flex-column-reverse justify-content-around align-items-center text-lg-start  justify-content-lg-around al w-100 p-lg-5 p-2 bg-body-secondary w-75 gap-5 ">
+                            <div class="imgsection6 p-lg-5 p-0 ">
                                 <img src="./public/img/testimonials/testimonials-3.jpg" class="d-block" width="250px" alt="...">
                             </div>
-                            <div class="d-flex flex-column gap-2 p-5 section6 w-75">
-                                <p class="text-secondary"><span class="text-danger"><i class="fa-solid fa-quote-left"></i></span>   Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita perferendis, vitae voluptate animi qui velit sapiente itaque veniam eveniet a ad aliquam, minima perspiciatis magni? Molestiae ducimus maxime exercitationem repudiandae!  <span class="text-danger"> <i class="fa-solid fa-quote-left fa-rotate-180"></i></span></p>
-                                <h1>SARA Wilsson</h1>
-                                <p class="text-secondary">Designer</p>
+                            <div class="d-flex flex-column gap-2 p-lg-5 p-0  section6 w-100">
+                                <p class="text-secondary w-100"><span class="text-danger"><i class="fa-solid fa-quote-left"></i></span>   Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita perferendis, vitae voluptate animi qui velit sapiente itaque veniam eveniet a ad aliquam, minima perspiciatis magni? Molestiae ducimus maxime exercitationem repudiandae!  <span class="text-danger"> <i class="fa-solid fa-quote-left fa-rotate-180"></i></span></p>
+                                <h1>SALMA AHMBALI</h1>
+                                <p class="text-secondary">Fst Pro max</p>
                                 <div class="text-warning">
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
@@ -499,14 +507,14 @@
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <div class="d-lg-flex flex-lg-row-reverse justify-content-lg-around al w-100 p-5 bg-body-secondary ">
-                            <div class="imgsection6 p-5 w-25">
+                        <div class="d-lg-flex flex-lg-row-reverse d-flex flex-column-reverse justify-content-around align-items-center text-lg-start  justify-content-lg-around al w-100 p-lg-5 p-2 bg-body-secondary w-75 gap-5 ">
+                            <div class="imgsection6 p-lg-5 p-0 ">
                                 <img src="./public/img/testimonials/testimonials-4.jpg" class="d-block" width="250px" alt="...">
                             </div>
-                            <div class="d-flex flex-column gap-2 p-5 section6 w-75">
-                                <p class="text-secondary"><span class="text-danger"><i class="fa-solid fa-quote-left"></i></span>   Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita perferendis, vitae voluptate animi qui velit sapiente itaque veniam eveniet a ad aliquam, minima perspiciatis magni? Molestiae ducimus maxime exercitationem repudiandae!  <span class="text-danger"> <i class="fa-solid fa-quote-left fa-rotate-180"></i></span></p>
-                                <h1>SARA Wilsson</h1>
-                                <p class="text-secondary">Designer</p>
+                            <div class="d-flex flex-column gap-2 p-lg-5 p-0  section6 w-100">
+                                <p class="text-secondary w-100"><span class="text-danger"><i class="fa-solid fa-quote-left"></i></span>   Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita perferendis, vitae voluptate animi qui velit sapiente itaque veniam eveniet a ad aliquam, minima perspiciatis magni? Molestiae ducimus maxime exercitationem repudiandae!  <span class="text-danger"> <i class="fa-solid fa-quote-left fa-rotate-180"></i></span></p>
+                                <h1>Essalmi Mohamed</h1>
+                                <p class="text-secondary">Ban Msi'k</p>
                                 <div class="text-warning">
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
@@ -521,18 +529,56 @@
                 </div>
             </section>
             <!-- section 7 -->
-            <section>
-
+            <section id="Events">
+                <div class="sec-7 p-5 h-100 w-100 flex-lg-column ">
+                <div class="d-flex  justify-content-center flex-column align-content-center p-5   ">
+                    <p class="fw-light  text-center titre">Events</p>
+                    <h2 class="text-center fs-1 cover">WHAT ARE THE  <span class="text-danger "> SAYING ABOUT</span></h2>
+                </div>
+                    <div class="d-lg-flex flex-lg-row gap-lg-4 d-flex flex-column gap-5  ">
+                        <div class="sec-7-div1 p-2 d-flex flex-column justify-content-end ">
+                            <h2 class="text-light fw-bold">Custom Parties</h2>
+                            <h1 class="text-light fw-bold price">$99</h1>
+                            <p class="text-light fw-bold opacity-75">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit, nulla, sit dolore molestias
+                            cum eos voluptatum facilis ea quo autem id neque illo optio voluptas eius vitae provident
+                            exercitationem minima.</p>
+                        </div>
+                
+                        <div class="sec-7-div2 p-2 d-flex flex-column justify-content-end">
+                            <h2 class="text-light fw-bold">Private Parties</h2>
+                            <h1 class="text-light fw-bold price">$249</h1>
+                            <p class="text-light fw-bold opacity-75">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit, nulla, sit dolore molestias
+                            cum eos voluptatum facilis ea quo autem id neque illo optio voluptas eius vitae provident
+                            exercitationem minima.</p>
+                        </div>
+                        <div class="sec-7-div3 p-2 d-flex flex-column justify-content-end">
+                            <h2 class="text-light fw-bold">Birthday Parties</h2>
+                            <h1 class="text-light fw-bold price">$499</h1>
+                            <p class="text-light fw-bold opacity-75">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit, nulla, sit dolore molestias
+                            cum eos voluptatum facilis ea quo autem id neque illo optio voluptas eius vitae provident
+                            exercitationem minima.</p>
+                        </div>
+                    </div>
+                </div>
+                
             </section>
             <!-- section 8 -->
             <section class="seventh-section">
                 <div class=" d-flex flex-column align-items-center pt-5">
-                    <h6 class="opacity-50">CHEFS</h6>
-                    <p class="fs-1 fw-bolde">OUR<span class="text-danger"> PROFESIONAL </span>CHEFS</p>
+                    <h6 class="opacity-50 titre">CHEFS</h6>
+                    <p class="fs-1 fw-bolde cover">OUR<span class="text-danger"> PROFESIONAL </span>CHEFS</p>
                 </div>
                 <div class="sec8-cards d-lg-flex flex-lg-row flex-column gap-lg-4 gap-5 justify-content-center h-100 pt-4">
                     <div class="col">
                         <div class="card">
+                            <div class="card-hov">
+                                <div class="d-flex flex-column text-black  gap-3 ">
+                                    <i class="fa-brands fa-instagram"></i>
+                                    <i class="fa-brands fa-facebook"></i>
+                                    <i class="fa-brands fa-snapchat"></i>
+                                    <i class="fa-brands fa-whatsapp"></i>
+                                </div>
+                            </div>
                             <div class="sec8-img-border">
                                 <img src="./public/img/chefs/chefs-1.jpg" class="card-img-top" alt="...">
                             </div>
@@ -547,6 +593,14 @@
                     </div>
                     <div class="col">
                         <div class="card">
+                            <div class="card-hov">
+                                <div class="d-flex flex-column text-black  gap-3 ">
+                                    <i class="fa-brands fa-instagram"></i>
+                                    <i class="fa-brands fa-facebook"></i>
+                                    <i class="fa-brands fa-snapchat"></i>
+                                    <i class="fa-brands fa-whatsapp"></i>
+                                </div>
+                            </div>
                             <div class="sec8-img-border">
                                 <img src="./public/img/chefs/chefs-2.jpg" class="card-img-top" alt="...">
                             </div>
@@ -561,6 +615,14 @@
                     </div>
                     <div class="col">
                         <div class="card">
+                            <div class="card-hov">
+                                <div class="d-flex flex-column text-black  gap-3 ">
+                                    <i class="fa-brands fa-instagram"></i>
+                                    <i class="fa-brands fa-facebook"></i>
+                                    <i class="fa-brands fa-snapchat"></i>
+                                    <i class="fa-brands fa-whatsapp"></i>
+                                </div>
+                            </div>
                             <div class="sec8-img-border">
                                 <img src="./public/img/chefs/chefs-3.jpg" class="card-img-top" alt="...">
                             </div>
@@ -576,11 +638,11 @@
                 </div>
             </section>
             <!-- section 9 -->
-            <section>
+            <section id="book">
                 <div class="pt-5">
                     <div class="d-flex align-items-center text-center flex-column">
-                        <p>BOOK A TABLE</p>
-                        <h2>BOOK <span class="text-danger">YOUR STAY</span> WITH US </h2>
+                        <p class="titre">BOOK A TABLE</p>
+                        <h2 class="cover">BOOK <span class="text-danger">YOUR STAY</span> WITH US </h2>
                     </div>
                     <div class="d-flex justify-content-center align-items-center w-100 p-lg-5 p-2" >
                         <div class="sec8-div1 w-100">
@@ -611,15 +673,13 @@
                 </div>
             </section>
             <!-- section 10 -->
-            <section>
-
-            </section>
+            
             <!-- section 11 -->
             <section class="pb-5">
                 <div class="sec11-div">
                     <div class="sec11-div1">
-                        <p>CONTACT</p>
-                        <h2>NEED HELP ? <span class="text-danger">Contact us</span></h2>
+                        <p class="titre">CONTACT</p>
+                        <h2 class="cover">NEED HELP ? <span class="text-danger">Contact us</span></h2>
                     </div>
                     <div class="sec11-div2">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6644.4895246102915!2d-7.495224218233849!3d33.62489510118534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda7cb3869a77837%3A0x431add3dab6de5f!2sLa%20Virgule%20Caf%C3%A9%20Restaurant!5e0!3m2!1sfr!2sma!4v1705605171622!5m2!1sfr!2sma" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>

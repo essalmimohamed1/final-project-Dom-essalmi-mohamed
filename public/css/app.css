@@ -12445,6 +12445,26 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+.back {
+  position: fixed;
+  bottom: 2vh;
+  right: 2vw;
+  z-index: 10;
+}
+.back .top {
+  height: 100px;
+  width: 100px;
+  bottom: 40px;
+  right: 0px;
+}
+.back .top .scroll {
+  color: #EC2727 !important;
+  font-size: 50px;
+}
+.back .top .scroll:hover {
+  color: white;
+}
+
 .navbar {
   position: fixed;
   z-index: 5;
@@ -12587,6 +12607,20 @@ textarea.form-control-lg {
     width: 100% !important;
   }
 }
+@font-face {
+  font-family: GrapeNuts;
+  src: url(../../../../public/fonts/GrapeNuts-Regular.ttf);
+  font-family: dancing;
+  src: url(../../../../public/fonts/DancingScript-VariableFont_wght.ttf);
+}
+.titre {
+  font-family: GrapeNuts;
+}
+
+.cover {
+  font-family: dancing;
+}
+
 .divsection1 {
   background-color: rgba(128, 128, 128, 0.306);
   display: flex;
@@ -12625,7 +12659,7 @@ textarea.form-control-lg {
 }
 .divsection1 .divdiv2section1 div button {
   border: none;
-  background-color: rgba(128, 128, 128, 0.052);
+  background-color: rgba(128, 128, 128, 0);
   border-radius: 0%;
   display: flex;
 }
@@ -12693,11 +12727,44 @@ textarea.form-control-lg {
   display: flex;
   flex-direction: column;
 }
+.divsection2 .divdiv2section2 .divdiv3section2 {
+  position: relative;
+}
+.divsection2 .divdiv2section2 .divdiv3section2 div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 .divsection2 .divdiv2section2 .divdiv3section2 img {
   width: 40vw;
   height: 48vh;
 }
 
+.button {
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  background: red;
+  transition: all 0.3s ease-in-out 0s;
+  box-shadow: red 0px 0px 0px 0px;
+  animation: 1.2s cubic-bezier(0.8, 0, 0, 1) 0s infinite normal none running pulse;
+  align-items: center;
+  border: 0;
+}
+
+.button:is(:hover, :focus) {
+  transform: scale(1.2);
+}
+
+@keyframes pulse {
+  100% {
+    box-shadow: 0 0 0 45px rgba(193, 244, 246, 0);
+  }
+}
 .divsection3 {
   display: flex;
   gap: 20px;
@@ -12807,6 +12874,10 @@ textarea.form-control-lg {
   padding: 150px;
 }
 
+.imgsection6 {
+  display: flex;
+  text-align: center;
+}
 .imgsection6 img {
   border-radius: 50%;
   border: white 2px solid;
@@ -12817,6 +12888,25 @@ textarea.form-control-lg {
   border-radius: 50%;
   width: 10px;
   height: 10px;
+}
+
+.sec-7-div1 {
+  background: linear-gradient(90deg, rgba(2, 0, 36, 0.669) 0%, rgba(47, 36, 36, 0.663) 35%), url("./../img/events-1.jpg ");
+}
+
+.sec-7-div2 {
+  height: 80vh;
+  background: linear-gradient(90deg, rgba(2, 0, 36, 0.669) 0%, rgba(47, 36, 36, 0.663) 35%), url("./../img/events-2.jpg");
+}
+
+.sec-7-div3 {
+  height: 80vh;
+  background: linear-gradient(90deg, rgba(2, 0, 36, 0.669) 0%, rgba(47, 36, 36, 0.663) 35%), url("./../img/events-3.jpg");
+}
+
+.price {
+  border-bottom: 3px solid #ec2727;
+  width: fit-content;
 }
 
 .seventh-section {
@@ -12830,7 +12920,31 @@ textarea.form-control-lg {
   gap: 2vw;
 }
 .seventh-section .sec8-cards .card {
+  position: relative;
   width: 28vw !important;
+}
+.seventh-section .sec8-cards .card .card-hov {
+  display: none;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 3;
+}
+.seventh-section .sec8-cards .card .card-hov div {
+  background-color: rgba(128, 128, 128, 0.256);
+  padding: 20px;
+  height: 30vh;
+  width: 5vw;
+}
+.seventh-section .sec8-cards .card .card-hov div i {
+  font-size: x-large;
+}
+.seventh-section .sec8-cards .card:hover {
+  transform: scale(1.05);
+  transition: 0.5s;
+}
+.seventh-section .sec8-cards .card:hover .card-hov {
+  display: block;
 }
 .seventh-section .sec8-cards .card .sec8-img-border {
   position: relative;
@@ -12923,7 +13037,7 @@ textarea.form-control-lg {
   font-size: xx-large;
   color: white;
   background-color: #ce2727;
-  padding: 15px;
+  padding: 17px;
   height: 10vh;
   width: 10vh;
   border-radius: 50%;
@@ -13212,7 +13326,7 @@ textarea.form-control-lg {
     display: flex;
     flex-direction: column;
     width: 90vw;
-    border: 2px black solid;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     padding: 20px;
     gap: 20px;
   }
