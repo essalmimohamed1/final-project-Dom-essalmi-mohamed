@@ -1,42 +1,183 @@
-.nav-hov {
+.navbar{
+    position: fixed;
     z-index: 5;
-    a {
-        z-index: 5;
-        position: relative;
-        &::after {
-            content: "";
-            position: absolute;
-            left: 0vw;
-            bottom: -30%;
-            width: 0;
-            background: #ec2727;
-            height: 2px;
-            border-radius: 4px;
-            transition: ease-in-out 0.3s;
+    .container-fluid{
+        height: 10vh !important;
+        .collapse{
+            .navbar-nav{
+                .nav-item{
+                    a{
+                        position: relative;
+                        &::after {
+                            content: "";
+                            position: absolute;
+                            left: 0vw;
+                            bottom: -10%;
+                            width: 0;
+                            background: $king;
+                            height: 2px;
+                            border-radius: 4px;
+                            transition: ease-in-out 0.3s;
+                        }
+
+                        &:hover::after {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
         }
-        &:hover::after {
-            width: 100%;
+        .connexion{
+            .connexion-btn:hover{
+                background-color: black !important;
+                color: white !important;
+                padding-block: 5px !important ;
+            }
+            .modale{
+                height: 100vh;
+                width: 176vw;
+                position: fixed;
+                top: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color : #00000074;
+                .log{
+                    width: 40vw;
+                    position: fixed !important;
+                    left: 40% !important;
+                    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+                    .sign{
+                        button{
+                            width: 40% !important;
+                            &:hover{
+                                background-color: white !important;
+                                color: $king !important;
+                                border: solid $king 1px !important;
+                                padding: 5px 0 !important ;
+                            }
+                        }
+                    }
+                    .signin{
+                        button{
+                            &:hover{
+                                background-color: white !important;
+                                color: $king !important;
+                                border: solid $king 3px !important;
+                                padding-block: 5px !important ;
+                            }
+                        }
+                    }
+                    .signup{
+                        button{
+                            &:hover{
+                                background-color: white !important;
+                                color: $king !important;
+                                border: solid $king 3px !important;
+                                padding-block: 5px !important ;
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
-    
 }
-.navigation {
-    width: 85% !important;
+
+@media (max-width : 430px) {
+    .navbar{
+        .container-fluid{
+            .collapse{
+                .navbar-nav{
+                    .nav-item{
+                        a{
+                            &:hover::after {
+                                width: 20%;
+                            }
+                        }
+                    }
+                }
+            }
+            .nav-hide{
+                position: fixed !important;
+                top: 10vh !important;
+                right: -110vw !important;
+                width: 100vw !important;
+                height: 100vh !important;
+                transition: 1s !important;
+                display: flex !important;
+                flex-direction: column !important;
+                align-items: center !important;
+                transition: ease-in 0.4s;
+
+            }
+            .nav-elements{
+                position: fixed !important;
+                top: 10vh !important;
+                right: -50vw !important;
+                width: 100vw !important;
+                height: 100vh !important;
+                transition: 1s !important;
+                display: flex !important;
+                flex-direction: column !important;
+                align-items: center !important;
+                transition: ease-in 0.4s;
+            }
+            .connexion{
+                width: 50% !important;
+                .connexion-btn{
+                    width: 80% !important;
+                }
+                .connexion-btn:hover{
+                    background-color: white !important;
+                    color: $king !important;
+                    border: solid $king 3px !important;
+                }
+                .modale{
+                    height: 100vh;
+                    width: 176vw;
+                    position: fixed;
+                    top: 0;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background-color : #00000074;
+                    .log{
+                        width: 70vw !important;
+                        position: fixed !important;
+                        left: 16% !important;
+                        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+                        .sign{
+                            button{
+                                width: 40% !important;
+                                &:hover{
+                                    background-color: white !important;
+                                    color: $king !important;
+                                    border: solid $king 1px !important;
+                                }
+                            }
+                        }
+                        .signin{
+                            button{
+                                &:hover{
+                                    background-color: white !important;
+                                    color: $king !important;
+                                    border: solid $king 3px !important;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .navbar-toggler{
+                width: 10% !important;
+                span{
+                    width: 100% !important;
+                }
+            }
+        }
+    }
 }
-.navhover:hover {
-    color: #ec2727 !important;
-}
-.tatema {
-    position: relative;
-    display: inline-block;
-    color: white;
-    background-image: linear-gradient(#363636, #363636);
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-    background-size: 0% 100%;
-    transition: background-size .5s, color .5s;
-}
-.tatema:hover {
-    background-size: 100% 100%;
-    color: #fff;
-}
+
+
+

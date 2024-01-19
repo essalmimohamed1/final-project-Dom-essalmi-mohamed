@@ -35,6 +35,7 @@
   --bs-gray-800: #343a40;
   --bs-gray-900: #212529;
   --bs-blue: #1a76d1;
+  --bs-red: #EC2727;
   --bs-primary: #0d6efd;
   --bs-secondary: #6c757d;
   --bs-success: #198754;
@@ -44,6 +45,7 @@
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
   --bs-blue-rgb: 26, 118, 209;
+  --bs-red-rgb: 236, 39, 39;
   --bs-primary-rgb: 13, 110, 253;
   --bs-secondary-rgb: 108, 117, 125;
   --bs-success-rgb: 25, 135, 84;
@@ -3037,6 +3039,23 @@ textarea.form-control-lg {
   --bs-btn-disabled-border-color: #1a76d1;
 }
 
+.btn-red {
+  --bs-btn-color: #000;
+  --bs-btn-bg: #EC2727;
+  --bs-btn-border-color: #EC2727;
+  --bs-btn-hover-color: #000;
+  --bs-btn-hover-bg: #ef4747;
+  --bs-btn-hover-border-color: #ee3d3d;
+  --bs-btn-focus-shadow-rgb: 201, 33, 33;
+  --bs-btn-active-color: #000;
+  --bs-btn-active-bg: #f05252;
+  --bs-btn-active-border-color: #ee3d3d;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #000;
+  --bs-btn-disabled-bg: #EC2727;
+  --bs-btn-disabled-border-color: #EC2727;
+}
+
 .btn-primary {
   --bs-btn-color: #fff;
   --bs-btn-bg: #0d6efd;
@@ -3187,6 +3206,23 @@ textarea.form-control-lg {
   --bs-btn-disabled-color: #1a76d1;
   --bs-btn-disabled-bg: transparent;
   --bs-btn-disabled-border-color: #1a76d1;
+  --bs-gradient: none;
+}
+
+.btn-outline-red {
+  --bs-btn-color: #EC2727;
+  --bs-btn-border-color: #EC2727;
+  --bs-btn-hover-color: #000;
+  --bs-btn-hover-bg: #EC2727;
+  --bs-btn-hover-border-color: #EC2727;
+  --bs-btn-focus-shadow-rgb: 236, 39, 39;
+  --bs-btn-active-color: #000;
+  --bs-btn-active-bg: #EC2727;
+  --bs-btn-active-border-color: #EC2727;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #EC2727;
+  --bs-btn-disabled-bg: transparent;
+  --bs-btn-disabled-border-color: #EC2727;
   --bs-gradient: none;
 }
 
@@ -4904,6 +4940,13 @@ textarea.form-control-lg {
   --bs-alert-link-color: var(--bs-blue-text-emphasis);
 }
 
+.alert-red {
+  --bs-alert-color: var(--bs-red-text-emphasis);
+  --bs-alert-bg: var(--bs-red-bg-subtle);
+  --bs-alert-border-color: var(--bs-red-border-subtle);
+  --bs-alert-link-color: var(--bs-red-text-emphasis);
+}
+
 .alert-primary {
   --bs-alert-color: var(--bs-primary-text-emphasis);
   --bs-alert-bg: var(--bs-primary-bg-subtle);
@@ -5272,6 +5315,19 @@ textarea.form-control-lg {
   --bs-list-group-active-color: var(--bs-blue-bg-subtle);
   --bs-list-group-active-bg: var(--bs-blue-text-emphasis);
   --bs-list-group-active-border-color: var(--bs-blue-text-emphasis);
+}
+
+.list-group-item-red {
+  --bs-list-group-color: var(--bs-red-text-emphasis);
+  --bs-list-group-bg: var(--bs-red-bg-subtle);
+  --bs-list-group-border-color: var(--bs-red-border-subtle);
+  --bs-list-group-action-hover-color: var(--bs-emphasis-color);
+  --bs-list-group-action-hover-bg: var(--bs-red-border-subtle);
+  --bs-list-group-action-active-color: var(--bs-emphasis-color);
+  --bs-list-group-action-active-bg: var(--bs-red-border-subtle);
+  --bs-list-group-active-color: var(--bs-red-bg-subtle);
+  --bs-list-group-active-bg: var(--bs-red-text-emphasis);
+  --bs-list-group-active-border-color: var(--bs-red-text-emphasis);
 }
 
 .list-group-item-primary {
@@ -6873,6 +6929,11 @@ textarea.form-control-lg {
   background-color: RGBA(var(--bs-blue-rgb), var(--bs-bg-opacity, 1)) !important;
 }
 
+.text-bg-red {
+  color: #000 !important;
+  background-color: RGBA(var(--bs-red-rgb), var(--bs-bg-opacity, 1)) !important;
+}
+
 .text-bg-primary {
   color: #fff !important;
   background-color: RGBA(var(--bs-primary-rgb), var(--bs-bg-opacity, 1)) !important;
@@ -6920,6 +6981,15 @@ textarea.form-control-lg {
 .link-blue:hover, .link-blue:focus {
   color: RGBA(21, 94, 167, var(--bs-link-opacity, 1)) !important;
   text-decoration-color: RGBA(21, 94, 167, var(--bs-link-underline-opacity, 1)) !important;
+}
+
+.link-red {
+  color: RGBA(var(--bs-red-rgb), var(--bs-link-opacity, 1)) !important;
+  text-decoration-color: RGBA(var(--bs-red-rgb), var(--bs-link-underline-opacity, 1)) !important;
+}
+.link-red:hover, .link-red:focus {
+  color: RGBA(240, 82, 82, var(--bs-link-opacity, 1)) !important;
+  text-decoration-color: RGBA(240, 82, 82, var(--bs-link-underline-opacity, 1)) !important;
 }
 
 .link-primary {
@@ -7397,6 +7467,10 @@ textarea.form-control-lg {
   --bs-focus-ring-color: rgba(var(--bs-blue-rgb), var(--bs-focus-ring-opacity));
 }
 
+.focus-ring-red {
+  --bs-focus-ring-color: rgba(var(--bs-red-rgb), var(--bs-focus-ring-opacity));
+}
+
 .focus-ring-primary {
   --bs-focus-ring-color: rgba(var(--bs-primary-rgb), var(--bs-focus-ring-opacity));
 }
@@ -7552,6 +7626,11 @@ textarea.form-control-lg {
 .border-blue {
   --bs-border-opacity: 1;
   border-color: rgba(var(--bs-blue-rgb), var(--bs-border-opacity)) !important;
+}
+
+.border-red {
+  --bs-border-opacity: 1;
+  border-color: rgba(var(--bs-red-rgb), var(--bs-border-opacity)) !important;
 }
 
 .border-primary {
@@ -8582,6 +8661,11 @@ textarea.form-control-lg {
   color: rgba(var(--bs-blue-rgb), var(--bs-text-opacity)) !important;
 }
 
+.text-red {
+  --bs-text-opacity: 1;
+  color: rgba(var(--bs-red-rgb), var(--bs-text-opacity)) !important;
+}
+
 .text-primary {
   --bs-text-opacity: 1;
   color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity)) !important;
@@ -8789,6 +8873,11 @@ textarea.form-control-lg {
   text-decoration-color: rgba(var(--bs-blue-rgb), var(--bs-link-underline-opacity)) !important;
 }
 
+.link-underline-red {
+  --bs-link-underline-opacity: 1;
+  text-decoration-color: rgba(var(--bs-red-rgb), var(--bs-link-underline-opacity)) !important;
+}
+
 .link-underline-primary {
   --bs-link-underline-opacity: 1;
   text-decoration-color: rgba(var(--bs-primary-rgb), var(--bs-link-underline-opacity)) !important;
@@ -8885,6 +8974,11 @@ textarea.form-control-lg {
 .bg-blue {
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-blue-rgb), var(--bs-bg-opacity)) !important;
+}
+
+.bg-red {
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-red-rgb), var(--bs-bg-opacity)) !important;
 }
 
 .bg-primary {
@@ -12351,52 +12445,148 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-.nav-hov {
+.navbar {
+  position: fixed;
   z-index: 5;
 }
-.nav-hov a {
-  z-index: 5;
+.navbar .container-fluid, .navbar .container-sm, .navbar .container-md, .navbar .container-lg, .navbar .container-xl, .navbar .container-xxl {
+  height: 10vh !important;
+}
+.navbar .container-fluid .collapse .navbar-nav .nav-item a, .navbar .container-sm .collapse .navbar-nav .nav-item a, .navbar .container-md .collapse .navbar-nav .nav-item a, .navbar .container-lg .collapse .navbar-nav .nav-item a, .navbar .container-xl .collapse .navbar-nav .nav-item a, .navbar .container-xxl .collapse .navbar-nav .nav-item a {
   position: relative;
 }
-.nav-hov a::after {
+.navbar .container-fluid .collapse .navbar-nav .nav-item a::after, .navbar .container-sm .collapse .navbar-nav .nav-item a::after, .navbar .container-md .collapse .navbar-nav .nav-item a::after, .navbar .container-lg .collapse .navbar-nav .nav-item a::after, .navbar .container-xl .collapse .navbar-nav .nav-item a::after, .navbar .container-xxl .collapse .navbar-nav .nav-item a::after {
   content: "";
   position: absolute;
   left: 0vw;
-  bottom: -30%;
+  bottom: -10%;
   width: 0;
-  background: #ec2727;
+  background: #EC2727;
   height: 2px;
   border-radius: 4px;
   transition: ease-in-out 0.3s;
 }
-.nav-hov a:hover::after {
+.navbar .container-fluid .collapse .navbar-nav .nav-item a:hover::after, .navbar .container-sm .collapse .navbar-nav .nav-item a:hover::after, .navbar .container-md .collapse .navbar-nav .nav-item a:hover::after, .navbar .container-lg .collapse .navbar-nav .nav-item a:hover::after, .navbar .container-xl .collapse .navbar-nav .nav-item a:hover::after, .navbar .container-xxl .collapse .navbar-nav .nav-item a:hover::after {
   width: 100%;
 }
-
-.navigation {
-  width: 85% !important;
+.navbar .container-fluid .connexion .connexion-btn:hover, .navbar .container-sm .connexion .connexion-btn:hover, .navbar .container-md .connexion .connexion-btn:hover, .navbar .container-lg .connexion .connexion-btn:hover, .navbar .container-xl .connexion .connexion-btn:hover, .navbar .container-xxl .connexion .connexion-btn:hover {
+  background-color: black !important;
+  color: white !important;
+  padding-block: 5px !important;
+}
+.navbar .container-fluid .connexion .modale, .navbar .container-sm .connexion .modale, .navbar .container-md .connexion .modale, .navbar .container-lg .connexion .modale, .navbar .container-xl .connexion .modale, .navbar .container-xxl .connexion .modale {
+  height: 100vh;
+  width: 176vw;
+  position: fixed;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.4549019608);
+}
+.navbar .container-fluid .connexion .modale .log, .navbar .container-sm .connexion .modale .log, .navbar .container-md .connexion .modale .log, .navbar .container-lg .connexion .modale .log, .navbar .container-xl .connexion .modale .log, .navbar .container-xxl .connexion .modale .log {
+  width: 40vw;
+  position: fixed !important;
+  left: 40% !important;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+.navbar .container-fluid .connexion .modale .log .sign button, .navbar .container-sm .connexion .modale .log .sign button, .navbar .container-md .connexion .modale .log .sign button, .navbar .container-lg .connexion .modale .log .sign button, .navbar .container-xl .connexion .modale .log .sign button, .navbar .container-xxl .connexion .modale .log .sign button {
+  width: 40% !important;
+}
+.navbar .container-fluid .connexion .modale .log .sign button:hover, .navbar .container-sm .connexion .modale .log .sign button:hover, .navbar .container-md .connexion .modale .log .sign button:hover, .navbar .container-lg .connexion .modale .log .sign button:hover, .navbar .container-xl .connexion .modale .log .sign button:hover, .navbar .container-xxl .connexion .modale .log .sign button:hover {
+  background-color: white !important;
+  color: #EC2727 !important;
+  border: solid #EC2727 1px !important;
+  padding: 5px 0 !important;
+}
+.navbar .container-fluid .connexion .modale .log .signin button:hover, .navbar .container-sm .connexion .modale .log .signin button:hover, .navbar .container-md .connexion .modale .log .signin button:hover, .navbar .container-lg .connexion .modale .log .signin button:hover, .navbar .container-xl .connexion .modale .log .signin button:hover, .navbar .container-xxl .connexion .modale .log .signin button:hover {
+  background-color: white !important;
+  color: #EC2727 !important;
+  border: solid #EC2727 3px !important;
+  padding-block: 5px !important;
+}
+.navbar .container-fluid .connexion .modale .log .signup button:hover, .navbar .container-sm .connexion .modale .log .signup button:hover, .navbar .container-md .connexion .modale .log .signup button:hover, .navbar .container-lg .connexion .modale .log .signup button:hover, .navbar .container-xl .connexion .modale .log .signup button:hover, .navbar .container-xxl .connexion .modale .log .signup button:hover {
+  background-color: white !important;
+  color: #EC2727 !important;
+  border: solid #EC2727 3px !important;
+  padding-block: 5px !important;
 }
 
-.navhover:hover {
-  color: #ec2727 !important;
+@media (max-width: 430px) {
+  .navbar .container-fluid .collapse .navbar-nav .nav-item a:hover::after, .navbar .container-sm .collapse .navbar-nav .nav-item a:hover::after, .navbar .container-md .collapse .navbar-nav .nav-item a:hover::after, .navbar .container-lg .collapse .navbar-nav .nav-item a:hover::after, .navbar .container-xl .collapse .navbar-nav .nav-item a:hover::after, .navbar .container-xxl .collapse .navbar-nav .nav-item a:hover::after {
+    width: 20%;
+  }
+  .navbar .container-fluid .nav-hide, .navbar .container-sm .nav-hide, .navbar .container-md .nav-hide, .navbar .container-lg .nav-hide, .navbar .container-xl .nav-hide, .navbar .container-xxl .nav-hide {
+    position: fixed !important;
+    top: 10vh !important;
+    right: -110vw !important;
+    width: 100vw !important;
+    height: 100vh !important;
+    transition: 1s !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    transition: ease-in 0.4s;
+  }
+  .navbar .container-fluid .nav-elements, .navbar .container-sm .nav-elements, .navbar .container-md .nav-elements, .navbar .container-lg .nav-elements, .navbar .container-xl .nav-elements, .navbar .container-xxl .nav-elements {
+    position: fixed !important;
+    top: 10vh !important;
+    right: -50vw !important;
+    width: 100vw !important;
+    height: 100vh !important;
+    transition: 1s !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    transition: ease-in 0.4s;
+  }
+  .navbar .container-fluid .connexion, .navbar .container-sm .connexion, .navbar .container-md .connexion, .navbar .container-lg .connexion, .navbar .container-xl .connexion, .navbar .container-xxl .connexion {
+    width: 50% !important;
+  }
+  .navbar .container-fluid .connexion .connexion-btn, .navbar .container-sm .connexion .connexion-btn, .navbar .container-md .connexion .connexion-btn, .navbar .container-lg .connexion .connexion-btn, .navbar .container-xl .connexion .connexion-btn, .navbar .container-xxl .connexion .connexion-btn {
+    width: 80% !important;
+  }
+  .navbar .container-fluid .connexion .connexion-btn:hover, .navbar .container-sm .connexion .connexion-btn:hover, .navbar .container-md .connexion .connexion-btn:hover, .navbar .container-lg .connexion .connexion-btn:hover, .navbar .container-xl .connexion .connexion-btn:hover, .navbar .container-xxl .connexion .connexion-btn:hover {
+    background-color: white !important;
+    color: #EC2727 !important;
+    border: solid #EC2727 3px !important;
+  }
+  .navbar .container-fluid .connexion .modale, .navbar .container-sm .connexion .modale, .navbar .container-md .connexion .modale, .navbar .container-lg .connexion .modale, .navbar .container-xl .connexion .modale, .navbar .container-xxl .connexion .modale {
+    height: 100vh;
+    width: 176vw;
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.4549019608);
+  }
+  .navbar .container-fluid .connexion .modale .log, .navbar .container-sm .connexion .modale .log, .navbar .container-md .connexion .modale .log, .navbar .container-lg .connexion .modale .log, .navbar .container-xl .connexion .modale .log, .navbar .container-xxl .connexion .modale .log {
+    width: 70vw !important;
+    position: fixed !important;
+    left: 16% !important;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  }
+  .navbar .container-fluid .connexion .modale .log .sign button, .navbar .container-sm .connexion .modale .log .sign button, .navbar .container-md .connexion .modale .log .sign button, .navbar .container-lg .connexion .modale .log .sign button, .navbar .container-xl .connexion .modale .log .sign button, .navbar .container-xxl .connexion .modale .log .sign button {
+    width: 40% !important;
+  }
+  .navbar .container-fluid .connexion .modale .log .sign button:hover, .navbar .container-sm .connexion .modale .log .sign button:hover, .navbar .container-md .connexion .modale .log .sign button:hover, .navbar .container-lg .connexion .modale .log .sign button:hover, .navbar .container-xl .connexion .modale .log .sign button:hover, .navbar .container-xxl .connexion .modale .log .sign button:hover {
+    background-color: white !important;
+    color: #EC2727 !important;
+    border: solid #EC2727 1px !important;
+  }
+  .navbar .container-fluid .connexion .modale .log .signin button:hover, .navbar .container-sm .connexion .modale .log .signin button:hover, .navbar .container-md .connexion .modale .log .signin button:hover, .navbar .container-lg .connexion .modale .log .signin button:hover, .navbar .container-xl .connexion .modale .log .signin button:hover, .navbar .container-xxl .connexion .modale .log .signin button:hover {
+    background-color: white !important;
+    color: #EC2727 !important;
+    border: solid #EC2727 3px !important;
+  }
+  .navbar .container-fluid .navbar-toggler, .navbar .container-sm .navbar-toggler, .navbar .container-md .navbar-toggler, .navbar .container-lg .navbar-toggler, .navbar .container-xl .navbar-toggler, .navbar .container-xxl .navbar-toggler {
+    width: 10% !important;
+  }
+  .navbar .container-fluid .navbar-toggler span, .navbar .container-sm .navbar-toggler span, .navbar .container-md .navbar-toggler span, .navbar .container-lg .navbar-toggler span, .navbar .container-xl .navbar-toggler span, .navbar .container-xxl .navbar-toggler span {
+    width: 100% !important;
+  }
 }
-
-.tatema {
-  position: relative;
-  display: inline-block;
-  color: white;
-  background-image: linear-gradient(#363636, #363636);
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  background-size: 0% 100%;
-  transition: background-size 0.5s, color 0.5s;
-}
-
-.tatema:hover {
-  background-size: 100% 100%;
-  color: #fff;
-}
-
 .divsection1 {
   background-color: rgba(128, 128, 128, 0.306);
   display: flex;
@@ -12433,20 +12623,48 @@ textarea.form-control-lg {
   color: white;
   border-radius: 20px;
 }
-.divsection1 .divdiv2section1 div {
+.divsection1 .divdiv2section1 div button {
+  border: none;
+  background-color: rgba(128, 128, 128, 0.052);
+  border-radius: 0%;
   display: flex;
-  gap: 10px;
-  align-items: center;
 }
-.divsection1 .divdiv2section1 div i {
-  color: #ec2727;
+.divsection1 .divdiv2section1 div button i {
   font-size: xx-large;
+  color: #EC2727;
 }
-.divsection1 .divdiv2section1 div p {
-  padding-top: 15px;
+.divsection1 .divdiv2section1 div button p {
+  font-size: large;
+  color: black;
+  padding-top: 2px;
 }
-.divsection1 .divdiv2section1 div p:hover {
-  color: #ec2727;
+.divsection1 .divdiv2section1 div button:hover p {
+  color: #EC2727;
+}
+
+.folar {
+  border: none;
+}
+
+.hello-div1 {
+  padding-right: 800px;
+}
+
+.hello-div {
+  padding-right: 400px;
+}
+
+.modal-content {
+  background-color: rgba(255, 0, 0, 0);
+  height: 100vh;
+  width: 100vw;
+  text-align: center;
+  top: 0;
+  bottom: 0;
+}
+.modal-content .modal-header {
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
 }
 
 .divsection2 {
@@ -12721,7 +12939,7 @@ textarea.form-control-lg {
   display: flex;
   flex-direction: column;
   width: 90vw;
-  border: 2px black solid;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   padding: 20px;
   gap: 20px;
 }

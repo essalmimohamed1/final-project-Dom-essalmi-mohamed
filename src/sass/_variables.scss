@@ -1,7 +1,14 @@
 @import "../../node_modules/bootstrap/scss/functions";
 @import "../../node_modules/bootstrap/scss/variables";
 
+$king: #EC2727;
 
+
+$custom-colors: (
+"red": $king,
+);
+
+$theme-colors: map-merge($custom-colors , $theme-colors);
 $blue: #1a76d1;
 
 $custom-colors: (
