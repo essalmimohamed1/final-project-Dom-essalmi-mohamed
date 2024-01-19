@@ -1,4 +1,3 @@
-
 //& Header
 //* sideBar
 let body = document.body
@@ -74,8 +73,15 @@ connexion.addEventListener("click", ()=> {
             signinDiv.classList.add('d-none');
         }
     })
+    
+
     clear.addEventListener("click", () =>{
         modale.classList.add('d-none');
+        if (!modale.classList.contains('d-none')) {
+            body.style.overflow = 'hidden';
+        } else {
+            body.style.overflow = '';
+        }
     })
 })
 // * caroussel 2
